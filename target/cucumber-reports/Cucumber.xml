@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="10.953">
+    <testcase classname="My store - final exercise part 1" name="Login and fill up address form" time="4.118">
+        <system-out><![CDATA[Given Page 'https://mystore-testlab.coderslab.pl/' opened in browser........passed
+When Button SignIn clicked..................................................passed
+And Email filled............................................................passed
+And Password filled.........................................................passed
+And Button Sign clicked.....................................................passed
+And Address clicked.........................................................passed
+And Create new address clicked..............................................passed
+And Alias 'Ad1' field filled................................................passed
+And Address 'Test Street1' field filled.....................................passed
+And City 'Bristol' field filled.............................................passed
+And ZipCode 'BS 11E' field filled...........................................passed
+And Phone '123456789' field filled..........................................passed
+And Save button clicked.....................................................passed
+Then Check if address expectedAlias equals 'Ad1'............................passed
+Then Check if address Address equals 'Test Street1'.........................passed
+Then Check if address City equals 'Bristol'.................................passed
+Then Check if address ZipCode equals 'BS 11E'...............................passed
+Then Check if address Phone equals '123456789'..............................passed
+Then Delete address.........................................................passed
+Then Check if address deleted...............................................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="My store - final exercise part 1" name="Login and fill up address form 2" time="3.221">
+        <system-out><![CDATA[Given Page 'https://mystore-testlab.coderslab.pl/' opened in browser........passed
+When Button SignIn clicked..................................................passed
+And Email filled............................................................passed
+And Password filled.........................................................passed
+And Button Sign clicked.....................................................passed
+And Address clicked.........................................................passed
+And Create new address clicked..............................................passed
+And Alias 'Ad2' field filled................................................passed
+And Address 'Test Street2' field filled.....................................passed
+And City 'London' field filled..............................................passed
+And ZipCode 'E1 8RU' field filled...........................................passed
+And Phone '234567890' field filled..........................................passed
+And Save button clicked.....................................................passed
+Then Check if address expectedAlias equals 'Ad2'............................passed
+Then Check if address Address equals 'Test Street2'.........................passed
+Then Check if address City equals 'London'..................................passed
+Then Check if address ZipCode equals 'E1 8RU'...............................passed
+Then Check if address Phone equals '234567890'..............................passed
+Then Delete address.........................................................passed
+Then Check if address deleted...............................................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="My store - final exercise part 1" name="Login and fill up address form 3" time="3.501">
+        <system-out><![CDATA[Given Page 'https://mystore-testlab.coderslab.pl/' opened in browser........passed
+When Button SignIn clicked..................................................passed
+And Email filled............................................................passed
+And Password filled.........................................................passed
+And Button Sign clicked.....................................................passed
+And Address clicked.........................................................passed
+And Create new address clicked..............................................passed
+And Alias 'Ad3' field filled................................................passed
+And Address 'Test Street3' field filled.....................................passed
+And City 'Manchester' field filled..........................................passed
+And ZipCode 'M1 1AG' field filled...........................................passed
+And Phone '345678901' field filled..........................................passed
+And Save button clicked.....................................................passed
+Then Check if address expectedAlias equals 'Ad3'............................passed
+Then Check if address Address equals 'Test Street3'.........................passed
+Then Check if address City equals 'Manchester'..............................passed
+Then Check if address ZipCode equals 'M1 1AG'...............................passed
+Then Check if address Phone equals '345678901'..............................passed
+Then Delete address.........................................................passed
+Then Check if address deleted...............................................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
