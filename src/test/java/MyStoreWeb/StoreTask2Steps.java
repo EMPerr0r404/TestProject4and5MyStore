@@ -36,12 +36,19 @@ public class StoreTask2Steps {
 
     @Given("Page {string} opened in browser2")
     public void openPage(String url) {
-        // Open a web page in a Chrome browser
-        logger.info("Opening page: " + url);
-        driver = new ChromeDriver();
+        // ChromeOptions options = new ChromeOptions();
+        // driver = new ChromeDriver(options);
+           
+        FirefoxOptions options = new FirefoxOptions();
+        driver = new FirefoxDriver(options);
+
+        options.addArguments("--headless");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.manage().window().maximize();
+        // driver.manage().window().maximize();
         driver.get(url);
+       
+        logger.info("Opening page: " + url);
+       
         // Initialize page objects
         logInPage = new StoreLogInPage(driver);
         mainPage = new StoreMainPage(driver);
