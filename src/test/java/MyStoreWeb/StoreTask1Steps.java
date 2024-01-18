@@ -24,15 +24,14 @@ public class StoreTask1Steps {
     public WebDriver driver;
     private StoreLogInPage logInPage;
     private StoreMainPage mainPage;
-//     // private StoreYourAccPage accPage;
-//     // private StoreYourAddressesPage addressesPage;
-//     // private StoreNewAddressPage newAddressPage;
+    // private StoreYourAccPage accPage;
+    // private StoreYourAddressesPage addressesPage;
+    // private StoreNewAddressPage newAddressPage;
 
-//     // Step for opening the page in the browser
-//     @Given("Page {string} opened in browser")
-//     public void pageOpen(String url) {
+    // Step for opening the page in the browser
+    @Given("Page {string} opened in browser")
+    public void pageOpen(String url) {
 //      // WebDriver initialization and page objects creation
-//         // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 //         ChromeOptions options = new ChromeOptions();
 //         this.driver = new ChromeDriver(options);
            
@@ -43,37 +42,32 @@ public class StoreTask1Steps {
 //         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 //         // driver.manage().window().maximize();
         
-//         this.driver.get(url);
-//         this.logInPage = new StoreLogInPage(driver);
-//         this.mainPage = new StoreMainPage(driver);
+        this.driver.get(url);
+        this.logInPage = new StoreLogInPage(driver);
+        this.mainPage = new StoreMainPage(driver);
 //         // this.accPage = new StoreYourAccPage(driver);
 //         // this.addressesPage = new StoreYourAddressesPage(driver);
 //         // this.newAddressPage = new StoreNewAddressPage(driver);
 //     }
 
 
+       
 
-
-    // Step for opening the browser and navigating to the given URL
-    @Given("Page {string} opened in browser")
-    public void pageOpen(String url) {
-        
- // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         this.driver = new ChromeDriver(options);
  
-         // System.setProperty("webdriver.gecko.driver","/usr/local/bin/??");
+
  
         // FirefoxOptions options = new FirefoxOptions();
         // options.addArguments("--headless");
         // this.driver = new FirefoxDriver(options);
     
      
-        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
-        this.driver.get(url);
-        this.logInPage = new StoreLogInPage(driver);
-        this.mainPage = new StoreMainPage(driver);
+        // this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+        // this.driver.get(url);
+        // this.logInPage = new StoreLogInPage(driver);
+        // this.mainPage = new StoreMainPage(driver);
     }
     @When("Button SignIn clicked")
     public void buttonSignIn() {
