@@ -24,9 +24,9 @@ public class StoreTask1Steps {
     public WebDriver driver;
     private StoreLogInPage logInPage;
     private StoreMainPage mainPage;
-    private StoreYourAccPage accPage;
-    private StoreYourAddressesPage addressesPage;
-    private StoreNewAddressPage newAddressPage;
+    // private StoreYourAccPage accPage;
+    // private StoreYourAddressesPage addressesPage;
+    // private StoreNewAddressPage newAddressPage;
 
     // Step for opening the page in the browser
     @Given("Page {string} opened in browser")
