@@ -31,31 +31,31 @@ public class StoreTask1Steps {
     // Step for opening the page in the browser
     @Given("Page {string} opened in browser")
     public void pageOpen(String url) {
-//      // WebDriver initialization and page objects creation
-//         ChromeOptions options = new ChromeOptions();
-//         this.driver = new ChromeDriver(options);
+     // WebDriver initialization and page objects creation
+        ChromeOptions options = new ChromeOptions();
+        this.driver = new ChromeDriver(options);
            
-//         // FirefoxOptions options = new FirefoxOptions();
-//         // driver = new FirefoxDriver(options);
+        // FirefoxOptions options = new FirefoxOptions();
+        // driver = new FirefoxDriver(options);
 
-//         options.addArguments("--headless");
-//         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-//         // driver.manage().window().maximize();
+        options.addArguments("--headless");
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        // driver.manage().window().maximize();
         
         this.driver.get(url);
         this.logInPage = new StoreLogInPage(driver);
         this.mainPage = new StoreMainPage(driver);
-//         // this.accPage = new StoreYourAccPage(driver);
-//         // this.addressesPage = new StoreYourAddressesPage(driver);
-//         // this.newAddressPage = new StoreNewAddressPage(driver);
-//     }
+        // this.accPage = new StoreYourAccPage(driver);
+        // this.addressesPage = new StoreYourAddressesPage(driver);
+        // this.newAddressPage = new StoreNewAddressPage(driver);
+    }
 
 
        
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        this.driver = new ChromeDriver(options);
+        // ChromeOptions options = new ChromeOptions();
+        // options.addArguments("--headless");
+        // this.driver = new ChromeDriver(options);
  
 
  
