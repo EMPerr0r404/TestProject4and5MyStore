@@ -32,7 +32,7 @@ public class StoreTask1Steps {
     @Given("Page {string} opened in browser")
     public void pageOpen(String url) {
      // WebDriver initialization and page objects creation
-        
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
            
