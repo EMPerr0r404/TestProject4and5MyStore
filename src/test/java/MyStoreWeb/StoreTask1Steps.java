@@ -100,8 +100,8 @@ public class StoreTask1Steps {
      
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         this.driver.get(url);
-        this.ddgMainPage = new DuckDuckGoMainPage(driver);
-        this.ddgResultsPage = new DuckDuckGoSearchResultsPage(driver);
+        this.logInPage = new StoreLogInPage(driver);
+        this.mainPage = new StoreMainPage(driver);
     }
     @When("Button SignIn clicked")
     public void buttonSignIn() {
