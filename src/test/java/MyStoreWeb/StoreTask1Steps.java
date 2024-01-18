@@ -48,10 +48,8 @@ public class StoreTask1Steps {
         // this.accPage = new StoreYourAccPage(driver);
         // this.addressesPage = new StoreYourAddressesPage(driver);
         // this.newAddressPage = new StoreNewAddressPage(driver);
-    }
 
-
-       
+        // --------------------------------
 
         // ChromeOptions options = new ChromeOptions();
         // options.addArguments("--headless");
