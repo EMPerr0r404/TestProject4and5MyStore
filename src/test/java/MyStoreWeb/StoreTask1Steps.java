@@ -47,9 +47,9 @@ public class StoreTask1Steps {
         this.driver.get(url);
         this.logInPage = new StoreLogInPage(driver);
         this.mainPage = new StoreMainPage(driver);
-        // this.accPage = new StoreYourAccPage(driver);
-        // this.addressesPage = new StoreYourAddressesPage(driver);
-        // this.newAddressPage = new StoreNewAddressPage(driver);
+        this.accPage = new StoreYourAccPage(driver);
+        this.addressesPage = new StoreYourAddressesPage(driver);
+        this.newAddressPage = new StoreNewAddressPage(driver);
 
 
     }
