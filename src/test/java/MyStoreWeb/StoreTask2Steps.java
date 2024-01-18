@@ -36,11 +36,11 @@ public class StoreTask2Steps {
 
     @Given("Page {string} opened in browser2")
     public void openPage(String url) {
-        // ChromeOptions options = new ChromeOptions();
-        // driver = new ChromeDriver(options);
+        ChromeOptions options = new ChromeOptions();
+        driver = new ChromeDriver(options);
            
-        FirefoxOptions options = new FirefoxOptions();
-        driver = new FirefoxDriver(options);
+        // FirefoxOptions options = new FirefoxOptions();
+        // driver = new FirefoxDriver(options);
 
         options.addArguments("--headless");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
