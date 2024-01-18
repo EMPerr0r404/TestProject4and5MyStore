@@ -33,12 +33,13 @@ public class StoreTask1Steps {
     public void pageOpen(String url) {
      // WebDriver initialization and page objects creation
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         this.driver = new ChromeDriver(options);
            
         // FirefoxOptions options = new FirefoxOptions();
         // driver = new FirefoxDriver(options);
 
-        options.addArguments("--headless");
+
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         // driver.manage().window().maximize();
         
