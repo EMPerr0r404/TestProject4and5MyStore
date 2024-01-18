@@ -4,11 +4,11 @@
 
      Given Page 'https://mystore-testlab.coderslab.pl/' opened in browser2
 
-    When Logged in
-    And MyStore clicked
-    And HUMMINGBIRD PRINTED SWEATER clicked
-    And Discount checked
-    And Size 'M' chosen
+     When Logged in
+     And MyStore clicked
+     And HUMMINGBIRD PRINTED SWEATER clicked
+     And Discount checked
+     And Size 'M' chosen
      And Numbers 5 of item chosen
      And Item added to cart
      And Proceed to checkout clicked
