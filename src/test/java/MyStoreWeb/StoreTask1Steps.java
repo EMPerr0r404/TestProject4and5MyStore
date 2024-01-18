@@ -1,56 +1,108 @@
 package MyStoreWeb;
 
+// import io.cucumber.java.en.And;
+// import io.cucumber.java.en.Given;
+// import io.cucumber.java.en.Then;
+// import io.cucumber.java.en.When;
+// // import org.junit.jupiter.api.Assertions;
+// import org.openqa.selenium.WebDriver;
+// import org.openqa.selenium.chrome.ChromeDriver;
+// import org.openqa.selenium.chrome.ChromeOptions;
+
+// import org.openqa.selenium.firefox.FirefoxDriver;
+// import org.openqa.selenium.firefox.FirefoxOptions;
+
+
+// import java.time.Duration;
+
+// // import static org.hamcrest.CoreMatchers.containsString;
+// // import static org.hamcrest.MatcherAssert.assertThat;
+// // import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// public class StoreTask1Steps {
+//     // WebDriver instance and page objects initialization
+//     public WebDriver driver;
+//     private StoreLogInPage logInPage;
+//     private StoreMainPage mainPage;
+//     // private StoreYourAccPage accPage;
+//     // private StoreYourAddressesPage addressesPage;
+//     // private StoreNewAddressPage newAddressPage;
+
+//     // Step for opening the page in the browser
+//     @Given("Page {string} opened in browser")
+//     public void pageOpen(String url) {
+//      // WebDriver initialization and page objects creation
+//         // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+//         ChromeOptions options = new ChromeOptions();
+//         this.driver = new ChromeDriver(options);
+           
+//         // FirefoxOptions options = new FirefoxOptions();
+//         // driver = new FirefoxDriver(options);
+
+//         options.addArguments("--headless");
+//         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+//         // driver.manage().window().maximize();
+        
+//         this.driver.get(url);
+//         this.logInPage = new StoreLogInPage(driver);
+//         this.mainPage = new StoreMainPage(driver);
+//         // this.accPage = new StoreYourAccPage(driver);
+//         // this.addressesPage = new StoreYourAddressesPage(driver);
+//         // this.newAddressPage = new StoreNewAddressPage(driver);
+//     }
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-// import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import org.junit.Assert;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+// import org.openqa.selenium.firefox.FirefoxDriver;
+// import org.openqa.selenium.firefox.FirefoxOptions;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration;
-
-// import static org.hamcrest.CoreMatchers.containsString;
-// import static org.hamcrest.MatcherAssert.assertThat;
-// import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.time.LocalDateTime;
+import java.util.List;
 
 public class StoreTask1Steps {
-    // WebDriver instance and page objects initialization
-    public WebDriver driver;
+
+    private WebDriver driver;
     private StoreLogInPage logInPage;
     private StoreMainPage mainPage;
-    // private StoreYourAccPage accPage;
-    // private StoreYourAddressesPage addressesPage;
-    // private StoreNewAddressPage newAddressPage;
 
-    // Step for opening the page in the browser
+    // Step for opening the browser and navigating to the given URL
     @Given("Page {string} opened in browser")
     public void pageOpen(String url) {
-     // WebDriver initialization and page objects creation
-        // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        this.driver = new ChromeDriver(options);
-           
-        // FirefoxOptions options = new FirefoxOptions();
-        // driver = new FirefoxDriver(options);
-
-        options.addArguments("--headless");
-        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        // driver.manage().window().maximize();
         
+ // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        this.driver = new ChromeDriver(options);
+ 
+         // System.setProperty("webdriver.gecko.driver","/usr/local/bin/??");
+ 
+        // FirefoxOptions options = new FirefoxOptions();
+        // options.addArguments("--headless");
+        // this.driver = new FirefoxDriver(options);
+    
+     
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         this.driver.get(url);
-        this.logInPage = new StoreLogInPage(driver);
-        this.mainPage = new StoreMainPage(driver);
-        // this.accPage = new StoreYourAccPage(driver);
-        // this.addressesPage = new StoreYourAddressesPage(driver);
-        // this.newAddressPage = new StoreNewAddressPage(driver);
+        this.ddgMainPage = new DuckDuckGoMainPage(driver);
+        this.ddgResultsPage = new DuckDuckGoSearchResultsPage(driver);
     }
-
     @When("Button SignIn clicked")
     public void buttonSignIn() {
         mainPage.clickSignIn();
