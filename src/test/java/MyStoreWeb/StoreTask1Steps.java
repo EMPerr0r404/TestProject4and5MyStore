@@ -19,11 +19,11 @@ import java.time.Duration;
 // import static org.hamcrest.MatcherAssert.assertThat;
 // import static org.junit.jupiter.api.Assertions.assertEquals;
 
-// public class StoreTask1Steps {
-//     // WebDriver instance and page objects initialization
-//     public WebDriver driver;
-//     private StoreLogInPage logInPage;
-//     private StoreMainPage mainPage;
+public class StoreTask1Steps {
+    // WebDriver instance and page objects initialization
+    public WebDriver driver;
+    private StoreLogInPage logInPage;
+    private StoreMainPage mainPage;
 //     // private StoreYourAccPage accPage;
 //     // private StoreYourAddressesPage addressesPage;
 //     // private StoreNewAddressPage newAddressPage;
@@ -51,36 +51,8 @@ import java.time.Duration;
 //         // this.newAddressPage = new StoreNewAddressPage(driver);
 //     }
 
-// import io.cucumber.java.en.And;
-// import io.cucumber.java.en.Given;
-// import io.cucumber.java.en.Then;
-// import io.cucumber.java.en.When;
-// import org.openqa.selenium.OutputType;
-// import org.openqa.selenium.TakesScreenshot;
-// import org.openqa.selenium.WebDriver;
-
-// import org.junit.Assert;
-
-// import org.openqa.selenium.chrome.ChromeDriver;
-// import org.openqa.selenium.chrome.ChromeOptions;
-
-// // import org.openqa.selenium.firefox.FirefoxDriver;
-// // import org.openqa.selenium.firefox.FirefoxOptions;
 
 
-// import java.io.File;
-// import java.io.IOException;
-// import java.nio.file.Files;
-// import java.nio.file.Paths;
-// import java.time.Duration;
-// import java.time.LocalDateTime;
-// import java.util.List;
-
-public class StoreTask1Steps {
-
-    private WebDriver driver;
-    private StoreLogInPage logInPage;
-    private StoreMainPage mainPage;
 
     // Step for opening the browser and navigating to the given URL
     @Given("Page {string} opened in browser")
