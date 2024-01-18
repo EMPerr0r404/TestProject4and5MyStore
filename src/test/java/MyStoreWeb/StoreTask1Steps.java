@@ -6,7 +6,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeOptions;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 
 import java.time.Duration;
@@ -27,10 +31,17 @@ public class StoreTask1Steps {
     // Step for opening the page in the browser
     @Given("Page {string} opened in browser")
     public void pageOpen(String url) {
-        // WebDriver initialization and page objects creation
-        driver = new ChromeDriver();
+     // WebDriver initialization and page objects creation
+        
+        // ChromeOptions options = new ChromeOptions();
+        // driver = new ChromeDriver(options);
+           
+        FirefoxOptions options = new FirefoxOptions();
+        driver = new FirefoxDriver(options);
+
+        options.addArguments("--headless");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.manage().window().maximize();
+        // driver.manage().window().maximize();
         driver.get(url);
         logInPage = new StoreLogInPage(driver);
         mainPage = new StoreMainPage(driver);
