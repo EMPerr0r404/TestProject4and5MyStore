@@ -44,11 +44,11 @@ public class StoreTask1Steps {
         // driver.manage().window().maximize();
         
         this.driver.get(url);
-        logInPage = new StoreLogInPage(driver);
-        mainPage = new StoreMainPage(driver);
-        accPage = new StoreYourAccPage(driver);
-        addressesPage = new StoreYourAddressesPage(driver);
-        newAddressPage = new StoreNewAddressPage(driver);
+        this.logInPage = new StoreLogInPage(driver);
+        this.mainPage = new StoreMainPage(driver);
+        this.accPage = new StoreYourAccPage(driver);
+        this.addressesPage = new StoreYourAddressesPage(driver);
+        this.newAddressPage = new StoreNewAddressPage(driver);
     }
 
     @When("Button SignIn clicked")
