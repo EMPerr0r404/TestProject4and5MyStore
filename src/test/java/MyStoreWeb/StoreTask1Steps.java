@@ -34,16 +34,16 @@ public class StoreTask1Steps {
      // WebDriver initialization and page objects creation
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        driver = new ChromeDriver(options);
+        this.driver = new ChromeDriver(options);
            
         // FirefoxOptions options = new FirefoxOptions();
         // driver = new FirefoxDriver(options);
 
         options.addArguments("--headless");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         // driver.manage().window().maximize();
         
-        driver.get(url);
+        this.driver.get(url);
         logInPage = new StoreLogInPage(driver);
         mainPage = new StoreMainPage(driver);
         accPage = new StoreYourAccPage(driver);
