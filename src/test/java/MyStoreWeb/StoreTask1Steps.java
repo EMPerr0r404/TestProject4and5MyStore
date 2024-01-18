@@ -1,23 +1,23 @@
 package MyStoreWeb;
 
-// import io.cucumber.java.en.And;
-// import io.cucumber.java.en.Given;
-// import io.cucumber.java.en.Then;
-// import io.cucumber.java.en.When;
-// // import org.junit.jupiter.api.Assertions;
-// import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.chrome.ChromeDriver;
-// import org.openqa.selenium.chrome.ChromeOptions;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+// import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-// import org.openqa.selenium.firefox.FirefoxDriver;
-// import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 
-// import java.time.Duration;
+import java.time.Duration;
 
-// // import static org.hamcrest.CoreMatchers.containsString;
-// // import static org.hamcrest.MatcherAssert.assertThat;
-// // import static org.junit.jupiter.api.Assertions.assertEquals;
+// import static org.hamcrest.CoreMatchers.containsString;
+// import static org.hamcrest.MatcherAssert.assertThat;
+// import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // public class StoreTask1Steps {
 //     // WebDriver instance and page objects initialization
@@ -51,30 +51,30 @@ package MyStoreWeb;
 //         // this.newAddressPage = new StoreNewAddressPage(driver);
 //     }
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+// import io.cucumber.java.en.And;
+// import io.cucumber.java.en.Given;
+// import io.cucumber.java.en.Then;
+// import io.cucumber.java.en.When;
+// import org.openqa.selenium.OutputType;
+// import org.openqa.selenium.TakesScreenshot;
+// import org.openqa.selenium.WebDriver;
 
-import org.junit.Assert;
+// import org.junit.Assert;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+// import org.openqa.selenium.chrome.ChromeDriver;
+// import org.openqa.selenium.chrome.ChromeOptions;
 
-// import org.openqa.selenium.firefox.FirefoxDriver;
-// import org.openqa.selenium.firefox.FirefoxOptions;
+// // import org.openqa.selenium.firefox.FirefoxDriver;
+// // import org.openqa.selenium.firefox.FirefoxOptions;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.util.List;
+// import java.io.File;
+// import java.io.IOException;
+// import java.nio.file.Files;
+// import java.nio.file.Paths;
+// import java.time.Duration;
+// import java.time.LocalDateTime;
+// import java.util.List;
 
 public class StoreTask1Steps {
 
